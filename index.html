@@ -16,12 +16,13 @@
             <!-- Make input fields empty in the onsubmit function after extracting info
             from the inputs -->
             <form action="" class="add-book-form" onsubmit="addBookToLibrary(event.preventDefault())">
+                <button type="button" class="form-remove-btn">X</button>
                 <label for="input-title">Title:</label>
-                <input type="text" name="input-title" id="input-title">
-                <label for="input-author">Author</label>
-                <input type="text" name="input-author" id="input-author">
-                <label for="input-pages">Pages</label>
-                <input type="text" name="input-pages" id="input-pages">
+                <input type="text" name="input-title" id="input-title" required>
+                <label for="input-author">Author:</label>
+                <input type="text" name="input-author" id="input-author" required>
+                <label for="input-pages">Pages:</label>
+                <input type="text" name="input-pages" id="input-pages" required>
                 <div>
                     <label for="read-checkbox">Read</label>
                     <input type="checkbox" id="read-checkbox">
@@ -30,39 +31,18 @@
             </form>
             <div class="header-title">Library</div>
         </header>
-        <nav class="sidebar">
-            <button class="add-book-btn">Add book</button>
-        </nav>
+        
+ 
 
         <main class="main-content">
-
-            <div class="card">
-                <div class="book-title">Harrry Potter and the Chamber of Secrets</div>
-                <div>by Jk Rowling</div>
-                <div>433 pages</div>
-                <div>Read</div>
+            <div class="add-btn-space">
+                <button class="add-book-btn">Add book</button>
             </div>
-            <div class="card">
-                <div>Harrry Potter</div>
-                <div>Author - Jk Rowling</div>
-                <div>433 pages</div>
-                <div>Read</div>
-            </div>
-            <div class="card">
-                <div>Title - Harrry Potter</div>
-                <div>Author - Jk Rowling</div>
-                <div>433 pages</div>
-                <div>Read</div>
-            </div>
-            <div class="card">
-                <div>Title - Harrry Potter</div>
-                <div>Author - Jk Rowling</div>
-                <div>433 pages</div>
-                <button>read</button>
+            <div class="book-display">
             </div>
         </main>
         <footer>
-            Copyright by Aron Dijkstar
+            Made by <a href="https://github.com/falc0039" rel="Profile" target="_blank">falc0039</a>
         </footer>
     </div>
 
